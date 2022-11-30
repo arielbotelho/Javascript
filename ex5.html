@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    Primeira nota <input id="nota1" type="number"> <br/>
+    Segunda nota <input id="nota2"  type="number"> <br/>
+    <button onclick="media()"> Calcular Media</button>
+
+    <script>
+
+        function media() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+
+            var media = parseFloat(nota1 + nota2)/2;
+
+        if (media>=7 ){
+        alert("aprovada");
+        }else if(media >4){
+         alert("recuperação")
+        }else{
+            alert("reprovado");
+        }
+        }
+    
+    </script>
