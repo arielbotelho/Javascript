@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--3. Faça um script que leia três números inteiros e mostre o maior deles. -->
+<body>
+    Primeiro numero: <input id="n1" type="number"> <br/>
+    Segundo numero: <input id="n2" type="number"> <br/>
+    Terceira numero: <input id="n3" type="number"> <br/>
+    <button onclick="maior()">Calcular Maior</button>
+
+    <script type="text/javascript">
+
+    function maior() {
+        var num1 = parseFloat(document.getElementById("n1").value);
+        var num2 = parseFloat(document.getElementById("n2").value);
+        var num3 = parseFloat(document.getElementById("n3").value);
+
+       if (num1 > num2 && num1 > num3) {
+           alert("Maior número é: " +num1)           
+       }else if (num2 > num1 && num2> num3) {
+           alert("Maior número é: " +num2)           
+       }else{
+           alert("Maior número é: " +num3)
+
+       }
+    }
+    
+    </script>
+</body>
+</html>

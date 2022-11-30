@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <!--2. Faça um script que pede duas notas de um aluno. 
+    Em seguida ele deve calcular a média do aluno e dar o 
+    seguinte resultado: A mensagem "Aprovado", se a média alcançada 
+    for maior ou igual a sete;
+     A mensagem "Reprovado", se a média for menor do que sete; 
+     A mensagem "Aprovado com Distinção", se a média for igual 
+     a dez. -->  
+<script>
+    function calculo() {
+        var nota1,nota2,media;
+        nota1 = window.document.boletim.n1.value;
+        nota2 = window.document.boletim.n2.value;
+        media = (parseFloat (nota1) + parseFloat(nota2))/2;
+
+        if(media <7){
+            alert ("reprovado");
+        }else if (media ==10){
+            alert ("aprovado com distinção");
+        }else  {
+           alert ("aprovado");
+        }
+    }
+        
+
+</script>
+<body>
+
+    <form name="boletim">
+        <table>
+            <tr>
+                <td>Nota 1</td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td>Nota 2</td>
+                <td><input type="text" name="n2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: left;">
+                <a href="#" onclick="calculo();return false;">
+                <button>calcular</button></a></td>
+                </tr>
+
+                
+
+        </table>
+
+    </form>
+
+</body>
+
+
+</html>
